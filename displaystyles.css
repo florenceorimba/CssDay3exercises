@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.mybutton {
+    padding: 20px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #20B2AA;
+    color: white;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+display: inline-block;
+}
+
+.mybutton:hover {
+    background-color: #0056b3;
+}
+
+.mypopup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.mypopup:target {
+    display:  flex; /* Show popup when targeted */
+}
+
+.mypopup-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    position: relative; /* For positioning the close button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+width: 320px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+color: #000;
+border: none;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.4);
+text-decoration: none;
+}
+
+.cancel-button {
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 10px 3px;
+    border-radius: 20px;
+    background-color: #dc3545; /* Red for cancel */
+    color: white;
+font-size: 16px;
+border: none;
+text-align: center;
+width: 100%;
+display: inline-block;
+}
+
+.cancel-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.mes {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 13px;
+    padding: 0px;
+}
+
+.mes h2 {
+    margin-bottom: 20px;
+box-sizing: border-box;
+font-weight: bold;
+}
+
+.mypopup-content1 p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.items {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.items p {
+    margin-bottom: 4px;
+    color: #000;
+}
+
+.mcard {
+    border: 0 solid #e5e7eb;
+    border-color: hsl(var(--border));
+    color: #000;
+}
+
+.flexbox {
+    margin-top: 8px;
+}
+
+ .flexbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.t-number {
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    box-shadow: -6px 0 1px rgba(60, 179, 113, 0.4);
+    margin: 4px;
+}
+
+.t-number1 {
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    border-left: 4px dashed green;
+    margin: 4px;
+}
+
+.t-number2 {
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+justify-content: center;
+align-items: center;
+    margin: 4px;
+}
+
+
+:root {
+  --border: 0 0% 89.8%;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
+
+
+.grid1 {
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #40E0D0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 50px;
+box-sizing: border-box;
+position: absolute;
+
+}
+
+.grid1 h2 {
+    font-size: 24px;
+    margin-top: 0;
+    font-weight: bold;
+text-align: left;
+display: flex;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+width: 100%;
+border-radius: 15px;
+align-text: left;
+}
+
+.item {
+    padding: 15px;
+    border-radius: 15px;
+    background: #fffaf6;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid2 h2 {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 20px;
+width: 100%;
+align-text: left;
+font-size: 16px;
+}
+
+.order {
+    margin-top: 20px;
+    color: grey;
+    font-weight: normal;
+align-text: left;
+display: flex;
+}
+
+.order span{
+    color: black;
+    font-weight: bold;
+}
