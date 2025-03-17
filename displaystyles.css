@@ -183,17 +183,16 @@ align-items: center;
 }
 
 
+
 .grid1 {
     width: 400px;
     padding: 20px;
     border-radius: 15px;
     background: #40E0D0;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
     text-align: center;
     margin-left: 50px;
 box-sizing: border-box;
-position: absolute;
-
 }
 
 .grid1 h2 {
