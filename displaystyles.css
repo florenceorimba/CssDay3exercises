@@ -3,9 +3,9 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    margin: 0;
+    height: 140vh;
+background: var(--body-gradient); 
+    margin: 20px;
 }
 
 .mybutton {
@@ -141,40 +141,53 @@ font-weight: bold;
 }
 
 .t-number {
-    background-color: #DCDCDC;
+    background-color: #F5F5F5;
     border-radius: 10px;
     padding: 15px;
-    width: 100px;
+    width: 150px;
     text-align: center;
-    box-shadow: -6px 0 1px rgba(60, 179, 113, 0.4);
+    
     margin: 4px;
+border-left: 4px solid green;
 }
 
 .t-number1 {
-    background-color: #DCDCDC;
+    background-color: #F5F5F5;
     border-radius: 10px;
     padding: 15px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     border-left: 4px dashed green;
     margin: 4px;
 }
 
 .t-number2 {
-    background-color: #DCDCDC;
+    background-color: #F5F5F5;
     border-radius: 10px;
     padding: 15px;
-    width: 100px;
+    width: 150px;
     text-align: center;
     display: flex;
 justify-content: center;
 align-items: center;
     margin: 4px;
+box-shadow: -6px 0 1px rgba(60, 179, 113, 0.4);
+}
+
+.t-number3 {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-left: 4px solid red;
+    margin: 4px;
 }
 
 
 :root {
-  --border: 0 0% 89.8%;
+    --border: 0 0% 89.8%;
+    --body-gradient: linear-gradient(50deg, rgba(255, 85, 51, .12) 60%, rgba(0, 0, 0, .08) 70%);
 }
 
 *, :after, :before {
@@ -182,17 +195,26 @@ align-items: center;
     border: 0 solid #e5e7eb;
 }
 
-
+.grid {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
 .grid1 {
+    margin: auto;
+    overflow: hidden;
+
     width: 400px;
     padding: 20px;
     border-radius: 15px;
-    background: #40E0D0;
-    
+    background: #F5F5F5;
     text-align: center;
-    margin-left: 50px;
+    
 box-sizing: border-box;
+background-size: cover;
+justify-content: center;
+display: grid;
 }
 
 .grid1 h2 {
